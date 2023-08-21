@@ -103,6 +103,17 @@ body {
 	font-weight: 500;
 	line-height: 142.857%; /* 142.857% */
 	letter-spacing: 0.2px;
+	max-width: 511px;
+}
+
+.base__direction_title {
+	color: var(--direction-result-number);
+	font-family: "Montserrat", sans-serif;
+	font-size: 4rem;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 142.5%; /* 142.5% */
+	letter-spacing: 0.2px;
 }
 
 /* Header */
@@ -129,7 +140,7 @@ body {
 	z-index: 3;
 }
 .header__cotainer {
-	padding: 0 10px;
+	padding: 0 20px;
 	height: 100%;
 	display: flex;
 	align-items: center;
@@ -430,19 +441,17 @@ body {
 }
 
 /* Achievement Block*/
-.contents__block {
-	padding: 45px 5px;
-}
 .contents__block_container {
 	height: 410px;
 	display: flex;
 	flex-direction: column;
 	align-items: flex-start;
+	gap: 90px;
+	padding: 0 10px;
 }
-.content__achievement {
+.content__block_item {
 	height: 100%;
 	width: 100%;
-	padding: 45px 5px;
 	display: flex;
 	flex-direction: column;
 	gap: 50px;
@@ -454,11 +463,13 @@ body {
 	flex-direction: column;
 	align-items: center;
 	gap: 5px;
+	padding: 45px 0;
 }
 .content__description {
 	max-width: 511px;
 }
-.content__achievement_directions {
+.content__achievement_directions,
+.content__directions {
 	flex: 1 1 auto;
 	width: 100%;
 	display: grid;
@@ -470,14 +481,13 @@ body {
 .direction__box {
 	background-color: var(--direction-background);
 	padding: 30px 40px;
-	width: 100%;
+	width: 230px;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	flex-direction: column;
 	text-align: center;
-	gap: 10px;
-	min-height: 209px;
+	gap: 15px;
 }
 .icon__box {
 	flex: 1 1 auto;
@@ -485,18 +495,11 @@ body {
 .direction__text_box {
 	display: flex;
 	flex-direction: column;
-	gap: 10px;
+	flex: 1 1 auto;
+	gap: 15px;
 	width: 169px;
 }
-.result__number {
-	color: var(--direction-result-number);
-	font-family: "Montserrat", sans-serif;
-	font-size: 4rem;
-	font-style: normal;
-	font-weight: 700;
-	line-height: 142.5%; /* 142.5% */
-	letter-spacing: 0.2px;
-}
+
 .direction__description {
 	color: var(--direction-description);
 	font-family: "Montserrat", sans-serif;
@@ -505,4 +508,22 @@ body {
 	font-weight: 700;
 	line-height: 150%; /* 150% */
 	letter-spacing: 0.1px;
+}
+
+/* Advice cards */
+
+.content__advice {
+}
+
+.advice__title {
+	font-size: 1.6rem;
+	text-align: left;
+	line-height: 150%;
+}
+.advice__description {
+	font-size: 1.4rem;
+	line-height: 143%;
+	text-align: left;
+}
+.content__advice_direction .direction__box img {
 }
